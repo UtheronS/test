@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+	font-family: 'Inter', sans-serif;
+	background-color: #f8fafc;
+}
+
+.card-input {
+	transition: all 0.3s ease;
+}
+
+.card-input:focus {
+	box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+.fa-brands {
+	font-size: 20px;
+}
+
+.card-icon {
+	filter: grayscale(100%);
+	opacity: 0.5;
+	transition: all 0.3s ease;
+}
+
+.card-icon.active {
+	filter: grayscale(0%);
+	opacity: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+input.error {
+	border-color: #ef4444 !important;
+}
+
+.absolute > .fa-brands {
+	margin: 5px 5px 0 0;
+}
+
+.header_info {
+	width: 500px;
+	height: 85px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+@media (max-width: 430px) {
+	.fa-brands {
+		font-size: 18px;
+	}
+	#cardNumber::placeholder {
+		font-size: 15px;
+	}
+}
